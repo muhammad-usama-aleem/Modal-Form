@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  /*Locationoftheimage*/
+  background-image: url("back1.jpg");
+  /*Imageiscenteredverticallyandhorizontallyatalltimes*/
+  background-position: center center;
+  /*Imagedoesn'trepeat*/
+  background-repeat: no-repeat;
+  /*Makestheimagefixedintheviewportsothatitdoesn'tmovewhenthecontentheightisgreaterthantheimageheight*/
+  background-attachment: fixed;
+  /*Thisiswhatmakesthebackgroundimagerescalebasedonitscontainer'ssize*/
+  background-size: cover;
+  /*Pickasolidbackgroundcolorthatwillbedisplayedwhilethebackgroundimageisloading*/
+  transition: transform 0.7s;
+  -webkit-transition: transform 0.7s;
+  -moz-transition: transform 0.7s;
+  -ms-transition: transform 0.7s;
+  -o-transition: transform 0.7s;
+}
+
+.container {
+  position: relative;
+}
+.container .join {
+  position: absolute;
+  left: 45%;
+  z-index: 1;
+  padding: 10px;
+  border: 1px solid plum;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: #121e2c;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: x-large;
+}
+.container button {
+  text-shadow: 0px 0px 3px rgb(247, 247, 247);
+}
+.text {
+  font-family: "Sacramento", cursive;
+  padding: 10px;
+  padding-top: 25vh;
+  font-size: 5rem;
+  color: white;
+  opacity: 0.7;
+  margin: 10px 20px;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+.modal-container {
+  position: absolute;
+  display: none;
+  background-color: #424242;
+  max-width: 100%;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  animation-name: modalopen;
+  animation-duration: 2s;
+}
+input {
+  border: #121e2c;
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  width: 96%;
+  outline: none;
+  opacity: 0.9;
+}
+.submit-btn {
+  width: 100%;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  padding-bottom: 20px;
+  opacity: 1;
+  font-size: larger;
+  background-color: #131314;
+  color: rgba(255, 255, 255, 1);
+}
+label {
+  font-size: large;
+  display: block;
+  color: white;
+  opacity: 0.7;
+}
+.form-head {
+  display: flex;
+  justify-content: center;
+  font-family: "Sacramento", cursive;
+  font-size: 3rem;
+}
+.middle {
+  margin: 20px;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background-color: transparent;
+  border-color: transparent;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
