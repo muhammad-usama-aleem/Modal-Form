@@ -7,8 +7,8 @@ landing page with modal form
 stylish landing page
 - Adding functionality to make modal open/close on button click
 
-![](main.jpg)
+![](main.png)
 </br>
 ## Into this
 </br>
-![](main1.jpg)
+![](main1.png)
