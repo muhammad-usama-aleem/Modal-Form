@@ -8,7 +8,5 @@ stylish landing page
 - Adding functionality to make modal open/close on button click
 
 ![](main.png)
-</br>
-## Into this
-</br>
+into this
 ![](main1.png)
